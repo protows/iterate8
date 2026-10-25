@@ -27,15 +27,11 @@ public class PotatoLaboratory {
         Collections.min(sortArr, comparator);
        Collections.max(sortArr, comparator);
   
-
-// 3. Get the two smallest (first two) and two biggest (last two)
-   // 3. Get the two smallest (first two) and two biggest (last two)
     Potato smallest1 = sortArr.get(0);
     Potato smallest2 = sortArr.get(1);
     Potato largest2 = sortArr.get(sortArr.size() - 2);
     Potato largest1 = sortArr.get(sortArr.size() - 1);
 
-    // 4. Return them ordered from smallest to biggest (must be the LAST line)
     return List.of(smallest1, smallest2, largest2, largest1);
     
 }
